@@ -6,7 +6,6 @@ package server;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
 
 /**
  * @author buhleallen
@@ -19,11 +18,10 @@ public class Server {
 	 */
 	public static void main(String[] args) {
 		try {
-			ServerSocket ss = new ServerSocket(2025);
+			ss = new ServerSocket(2025);
 			System.out.println("Running on port: "+ss.getLocalPort());
-			ServerGlobalVariables.clientList = new ArrayList<>();
 			while(true) {
-				acceptClientConnection(ss);
+				acceptClientConnection();
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -33,17 +31,38 @@ public class Server {
 	
 	//Helpers
 	
-	private static void acceptClientConnection(ServerSocket ss)
+	/**
+	 * Method to accept client connection
+	 * @param ss ServerSocket
+	 */
+	private static void acceptClientConnection()
 	{
 		try {
 			Socket socket = ss.accept();
-			System.out.println("Connection Established...");
 			Thread client = new Thread(new ClientHandler(socket));
 			client.start();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			close();
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * Method to close server socket
+	 */
+	private static void close()
+	{
+		try {
+			if(ss!=null) {
+				ss.close();
+			}
+		}catch(IOException e){
+			System.err.println("Failed Closing server Socket");
+			e.printStackTrace();
+		}
+	}
+	
+	//Variables
+	private static ServerSocket ss;
 
 }
