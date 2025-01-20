@@ -2,8 +2,8 @@
 
 ## Final Product
 This is a Multithreading Maven JavaFx client server application that mimics a facebook group chat. Every GUI represents a group member
-![Image Show Group Member That Left](./left.png)
 ![Image Show Erro In Username Input](./errorUser.png) 
+![Image Show Group Member That Left](./left.png)
 
 ## Cloning/Downloading Project
 - Download a zip file and unzip the project
