@@ -40,5 +40,5 @@ This is a Multithreading Maven JavaFx client server application that mimics a fa
 *CLIENT LEAVES GROUP CHAT BY CLOSING CLI NOT THE GUI*
 
 # APPLICATION DEMONSTRATIONS VIDEOS
-### [JAVAFX APPLICATION](https://youtu.be/LvdoniAMvtU?si=VpWv37wDliS669wd)
+### [JAVAFX APPLICATION](https://youtube.com/shorts/j1TqtfHmwXc?si=b05FkMq3W1G62PPn)
 ### [PREVIOUS VERSION - CLI APPLICATION](https://youtube.com/shorts/wf62uWOtY5I?si=7hVsnwOEW5NKwRCc)
