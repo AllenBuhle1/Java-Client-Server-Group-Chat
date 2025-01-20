@@ -12,17 +12,17 @@ This is a Multithreading Maven JavaFx client server application that mimics a fa
 
   `cd <--Path to project-->/Java-Client-Server-Group-Chat/Server/src`
   
--Delete Class files that are in the server package
+- Delete Class files that are in the server package
 
-   `rm server/*.class`
+  `rm server/*.class`
   
--Compile server class
+- Compile server class
 
-   `javac server/Server.java`
+  `javac server/Server.java`
   
--Run server class files
+- Run server class files
 
-   `java server.Server`
+  `java server.Server`
   
 ![Image Showing Commands for Server](./server.png)
 
@@ -31,12 +31,12 @@ This is a Multithreading Maven JavaFx client server application that mimics a fa
   
    `cd <--Path to project-->/Java-Client-Server-Group-Chat/Client`
   
--Delete Class files that are in the server package
+- Delete Class files that are in the server package
 
-   `mvn clean javafx:run install`
+  `mvn clean javafx:run install`
 
 ![Image Showing Commands for Client](./client.png)
--Minimise the Command Line Interface as the Graphical User Interface opens
+- Minimise the Command Line Interface as the Graphical User Interface opens
 
 *CLIENT LEAVES GROUP CHAT BY CLOSING CLI NOT THE GUI*
 
